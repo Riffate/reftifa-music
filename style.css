@@ -47,11 +47,20 @@ nav a {
   text-align: center;
 }
 
+.full-img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 .full-img {
   max-width: 100%;
   border-radius: 16px;
-  margin-top: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  height: auto;
 }
 
 .genres {
@@ -118,4 +127,31 @@ footer {
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .genres {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .music-grid {
+    grid-template-columns: 1fr;
+  }
 }
