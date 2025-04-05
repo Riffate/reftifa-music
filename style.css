@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  header {
+    background-color: #e63946;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .upload-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .upload-section input {
+    margin-top: 15px;
+  }
+  
+  .playlist-title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .music-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 40px 60px;
+  }
+  
+  .music-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .music-item h3 {
+    color: #e63946;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  

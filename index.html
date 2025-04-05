@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REFTIFA Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header>
+    <i data-lucide="music"></i>
+    REFTIFA Music Production
+  </header>
+
+  <section class="upload-section">
+    <h2>Upload Lagu Kamu</h2>
+    <input type="file" id="musicUpload" accept="audio/*">
+  </section>
+
+  <div class="instrument-gallery" style="text-align:center; margin: 40px 0;">
+    <h2 style="color:#e63946;"><i data-lucide="image"></i> Aktivitas Produksi Musik</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px;">
+      <img src="https://images.unsplash.com/photo-1607532941433-304659e81911" alt="Producing 1" style="width:280px; border-radius:12px;">
+      <img src="https://images.unsplash.com/photo-1589385955290-92d4b133e2d6" alt="Mixing 2" style="width:280px; border-radius:12px;">
+      <img src="https://images.unsplash.com/photo-1611605698335-d21f0c6e6615" alt="Studio 3" style="width:280px; border-radius:12px;">
+    </div>
+  </div>
+
+  <div class="playlist-title">
+    <h2>Kumpulan Lagu REFTIFA</h2>
+  </div>
+
+  <section class="music-list" id="musicList">
+    <div class="music-item">
+      <h3>Silent Storm</h3>
+      <iframe width="100%" height="166" src="https://www.youtube.com/embed/F-Ej7cCxqXk" title="Silent Storm" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="music-item">
+      <h3>Echoes of Tomorrow</h3>
+      <iframe width="100%" height="166" src="https://www.youtube.com/embed/_g8bqFSB8LU" title="Echoes of Tomorrow" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="music-item">
+      <h3>Flight to Light</h3>
+      <iframe width="100%" height="166" src="https://www.youtube.com/embed/UAZh_i72Hyg" title="Flight to Light" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="music-item">
+      <h3>Focus</h3>
+      <iframe width="100%" height="166" src="https://www.youtube.com/embed/qVhSv8k1cPc" title="Focus" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="music-item">
+      <h3>Keep That Choice</h3>
+      <iframe width="100%" height="166" src="https://www.youtube.com/embed/ruDJwGLXd0w" title="Keep That Choice" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="music-item">
+      <h3>Luck You</h3>
+      <iframe width="100%" height="166" src="https://www.youtube.com/embed/-vj-j6kN13E" title="Luck You" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div style="text-align:center; margin: 60px 0 30px;">
+    <h2 style="color:#e63946;"><i data-lucide="send"></i> Request Lagu atau Buat Lagu Baru</h2>
+    <p style="margin-bottom: 20px;">Ingin lagu khusus atau mau bikin lagu bareng REFTIFA? Yuk kirim request kamu!</p>
+    <a href="https://forms.gle/your-google-form-link" target="_blank" style="background:#e63946; color:white; padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:bold;">Request Lagu Sekarang</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
