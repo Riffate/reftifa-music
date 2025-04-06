@@ -10,32 +10,37 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <i data-lucide="music"></i>
-      <span>REFTIFA Music Production</span>
-    </div>
-    <nav>
+    <div class="logo">REFTIFA MUSIC Production</div>
+    <nav class="nav-links">
       <a href="#about">Tentang Kami</a>
       <a href="#genres">Genre</a>
-      <a href="#upload">Request Lagu</a>
       <a href="#contact">Contact Us</a>
     </nav>
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
   </header>
+  
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+    <a href="#about">Tentang Kami</a>
+    <a href="#genres">Genre</a>
+    <a href="#contact">Contact Us</a>
+  </div>
 
-  <section class="hero">
-    <h1>Bikin Lagu Bareng REFTIFA</h1>
-    <p>Studio musik digital & layanan produksi lagu custom</p>
+  <section class="section hero-bg">
+    <h2>Bikin Lagu Bareng REFTIFA</h2>
+    <p>Studio musik digital & layanan produksi lagu custom.</p>
   </section>
 
   <section id="about" class="section">
     <h2>Tentang Kami</h2>
-    <p>REFTIFA adalah rumah produksi musik yang fokus pada pembuatan lagu orisinal, soundtrack, dan komposisi digital dengan pendekatan kreatif & profesional.</p>
+    <p>REFTIFA adalah rumah produksi musik yang fokus pada pembuatan lagu orisinal, soundtrack, dan komposisi digital dengan pendekatan kreatif.</p>
     <div class="full-img-gallery">
-      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Produksi Musik Studio" class="full-img">
-      <img src="https://images.unsplash.com/photo-1503424886300-4f36ec0a523d?auto=format&fit=crop&w=800&q=80" alt="Rekam Mixing Lagu" class="full-img">
-      <img src="https://images.unsplash.com/photo-1581276879432-15a1a6110e16?auto=format&fit=crop&w=800&q=80" alt="Mixing Console" class="full-img">
+      <img src="img/niels-erdmann-klO77jxxlYw-unsplash.jpg" alt="Produksi Musik Studio" class="full-img">
+      <img src="img/techivation-avhSF7skf7s-unsplash.jpg" alt="Rekam Mixing Lagu" class="full-img">
+      <img src="img/wes-hicks-MEL-jJnm7RQ-unsplash.jpg" alt="Mixing Console" class="full-img">
     </div>
   </section>
+
 
   <section id="genres" class="section">
     <h2>Genre Musik</h2>

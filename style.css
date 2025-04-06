@@ -18,6 +18,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 70px;
 }
 
 .logo {
@@ -47,20 +48,11 @@ nav a {
   text-align: center;
 }
 
-.full-img-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
 .full-img {
   max-width: 100%;
   border-radius: 16px;
+  margin-top: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 280px;
-  height: auto;
 }
 
 .genres {
@@ -75,6 +67,11 @@ nav a {
   padding: 1rem;
   border-radius: 8px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.genres div:hover {
+  transform: scale(1.05);
 }
 
 input[type="file"] {
@@ -134,13 +131,10 @@ footer {
   header {
     flex-direction: column;
     padding: 1rem;
+    height: auto;
   }
   nav {
-    margin-top: 0.5rem;
-  }
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
+    display: none;
   }
   .hero {
     padding: 3rem 1rem;
@@ -154,4 +148,63 @@ footer {
   .music-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.sidebar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #c0392b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+}
+
+.sidebar a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #e74c3c;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.hero-bg {
+  background-image: url('img/NKS.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* kalau gambar gelap */
 }
