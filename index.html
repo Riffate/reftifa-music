@@ -1,89 +1,175 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REFTIFA Music</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-  <header>
-    <div class="logo">REFTIFA MUSIC Production</div>
-    <nav class="nav-links">
-      <a href="#about">Tentang Kami</a>
-      <a href="#genres">Genre</a>
-      <a href="#contact">Contact Us</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REFTIFA MUSIC</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">REFTIFA <span>MUSIC</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">HOME</a>
+        <a href="#about">TENTANG KAMI</a>
+        <a href="#genre">GENRE</a>
+        <a href="#contact">KONTAK</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
     </nav>
-    <button class="hamburger" onclick="toggleSidebar()">☰</button>
-  </header>
-  
-  <div id="sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
-    <a href="#about">Tentang Kami</a>
-    <a href="#genres">Genre</a>
-    <a href="#contact">Contact Us</a>
-  </div>
+    <!-- Navbar end -->
 
-  <section class="section hero-bg">
-    <h2>Bikin Lagu Bareng REFTIFA</h2>
-    <p>Studio musik digital & layanan produksi lagu custom.</p>
-  </section>
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Nikmati Lagu <span>Yang Enak</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
+          non.
+        </p>
+        <a href="#" class="cta">Buat Sekarang</a>
+      </main>
+    </section>
 
-  <section id="about" class="section">
-    <h2>Tentang Kami</h2>
-    <p>REFTIFA adalah rumah produksi musik yang fokus pada pembuatan lagu orisinal, soundtrack, dan komposisi digital dengan pendekatan kreatif.</p>
-    <div class="full-img-gallery">
-      <img src="img/niels-erdmann-klO77jxxlYw-unsplash.jpg" alt="Produksi Musik Studio" class="full-img">
-      <img src="img/techivation-avhSF7skf7s-unsplash.jpg" alt="Rekam Mixing Lagu" class="full-img">
-      <img src="img/wes-hicks-MEL-jJnm7RQ-unsplash.jpg" alt="Mixing Console" class="full-img">
-    </div>
-  </section>
+    <!-- Hero Section End -->
 
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
 
-  <section id="genres" class="section">
-    <h2>Genre Musik</h2>
-    <div class="genres">
-      <div>🎧 Pop</div>
-      <div>🎸 Rock</div>
-      <div>🎹 Lo-fi</div>
-      <div>🎷 Jazz</div>
-      <div>🕺 EDM</div>
-      <div>🎻 Instrumental</div>
-    </div>
-  </section>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Screenshot 2025-04-06 211257.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih REFTIFA ?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            recusandae, excepturi nesciunt nulla explicabo dolorem?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            veniam rerum magnam reprehenderit maxime, laborum voluptas eos
+            recusandae modi at?
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section id="upload" class="section">
-    <h2>Request Pembuatan Lagu</h2>
-    <p>Kirim lagu contohmu atau request bikin lagu dari nol bareng tim kami!</p>
-    <input type="file" id="musicUpload" accept="audio/*">
-    <a href="https://forms.gle/your-google-form-link" target="_blank" class="btn">Form Request Lagu</a>
-  </section>
+    <!-- About Section End -->
 
-  <section class="music-section">
-    <h2>Kumpulan Lagu REFTIFA</h2>
-    <div class="music-grid">
-      <iframe src="https://www.youtube.com/embed/F-Ej7cCxqXk" title="Silent Storm" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/_g8bqFSB8LU" title="Echoes of Tomorrow" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/UAZh_i72Hyg" title="Flight to Light" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/qVhSv8k1cPc" title="Focus" allowfullscreen></iframe>
-    </div>
-  </section>
+    <!-- Genre Section Start -->
+    <section id="genre" class="genre">
+      <h2><span>Genre</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nemo eius
+        doloribus a itaque
+      </p>
 
-  <section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:reftifamusic@gmail.com">reftifamusic@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/reftifa.music" target="_blank">@reftifa.music</a></p>
-  </section>
+      <div class="row">
+        <div class="genre-card">
+          <img src="img/genre/rock.png" alt="ROCK" class="genre-card-image" />
+          <h3 class="genre-card-title">- ROCK -</h3>
+          <p class="genre-card-price">IDR 500k</p>
+        </div>
+        <div class="genre-card">
+          <img src="img/genre/pop.png" alt="POP" class="genre-card-image" />
+          <h3 class="genre-card-title">- POP -</h3>
+          <p class="genre-card-price">IDR 500k</p>
+        </div>
+        <div class="genre-card">
+          <img
+            src="img/genre/costum.png"
+            alt="COSTUM"
+            class="genre-card-image"
+          />
+          <h3 class="genre-card-title">- COSTUM -</h3>
+          <p class="genre-card-price">IDR 1000k</p>
+        </div>
+      </div>
+    </section>
+    <!-- Genre Section End -->
 
-  <footer>
-    <p>&copy; 2025 REFTIFA Music. All rights reserved.</p>
-  </footer>
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+        praesentium.
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d772.5519325886315!2d110.15158758134281!3d-6.930314473353043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e705d9e2bfebba9%3A0x2932c181e17347b8!2sRafte%20Kitchen!5e1!3m2!1sen!2sid!4v1743952998906!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
 
-  <script src="script.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-</body>
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">HOME</a>
+        <a href="#about">TENTANG KAMI</a>
+        <a href="#genre">GENRE</a>
+        <a href="#contact">KONTAK</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">RAFTE</a>. | &copy; 2025</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
